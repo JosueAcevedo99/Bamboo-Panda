@@ -1,6 +1,4 @@
 
-
-
 :root{
     --font:  "Trebuchet MS";
     --color: #6ebf8d;
@@ -55,12 +53,17 @@ body{
     color: var(--color)!important;
 }
 
-/* header */
+#numcarrito, #numlike{
+    border-radius: 100%;
+    margin-bottom: 100%;
+}
+
+/* carrusel */
 #header{
     background: url(../images/banner-img-2.jpeg) top/cover no-repeat;
 }
 .carousel-inner h1{
-    font-size: 60px;
+    font-size: 55px;
     font-family: var(--font);
 }
 
@@ -94,7 +97,7 @@ body{
             transform: translateY(-50%);
 }
 
-/* collection */
+/* macetas */
 .active-filter-btn{
     background-color: var(--color)!important;
     color: #fff!important;
@@ -173,9 +176,38 @@ footer a:hover{
     color: var(--color)!important;
 }
 
+.icons{
+    font-size: x-large!important;
+}
+
 /* media queries */
 @media(min-width: 992px){
     .nav-item{
         border-bottom: none;
     }
+}
+
+/* small queries */
+@media (max-width: 576px) {
+    #titulo{
+        font-size:small !important;
+    }
+
+    #btn-navbar{
+        font-size: small !important;
+    }
+
+    .carousel-inner h1{
+        font-size: 35px !important;
+    }
+    
+    .carousel-inner h2{
+        font-size: 40px !important;
+    }
+
+    .derechos{
+        padding-left: 0.25rem !important;
+        font-size:small;
+    }
+
 }

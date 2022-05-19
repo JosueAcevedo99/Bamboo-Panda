@@ -24,20 +24,20 @@
                 <span class = "fw-lighter ms-2" id="titulo">Bamboo Panda Store</span>
             </a>
 
-            <div class = "order-lg-2 nav-btns">
+            <div class = "order-lg-2 nav-btns ">
                 <button type = "button" class = "btn position-relative">
                     <i class="bi bi-cart"></i>
-                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+                    <span class = "position-absolute top-50 start-100 translate-middle badge bg-primary" id="numcarrito">5</span>
                 </button>
                 <button type = "button" class = "btn position-relative">
                     <i class="bi bi-heart"></i>
-                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                    <span class = "position-absolute top-50 start-100 translate-middle badge bg-primary" id="numlike">2</span>
                 </button>
 
             </div>
 
             <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
-                <span class = "navbar-toggler-icon"></span>
+                <span class = "navbar-toggler-icon" id="btn-navbar"></span>
             </button>
 
             <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
@@ -52,7 +52,7 @@
                         <a class = "nav-link  text-dark" href = "#special">Jardineras</a>
                     </li>
                     <li class = "nav-item px-2 py-2">
-                        <a class = "nav-link  text-dark" href = "#blogs">Artículos</a>
+                        <a class = "nav-link  text-dark" href = "#blogs">Blog</a>
                     </li>
                     <li class = "nav-item px-2 py-2">
                         <a class = "nav-link  text-dark" href = "#about">Nosotros</a>
@@ -61,20 +61,20 @@
             </div>
         </div>
     </nav>
-    <!-- end of navbar -->
+    <!-- end navbar -->
 
-    <!-- header -->
+    <!-- header / carrusel -->
     <header id = "header" class = "vh-100 carousel slide" data-bs-ride = "carousel" style = "padding-top: 104px;">
         <div class = "container h-100 d-flex align-items-center carousel-inner">
-            <div class = "text-center carousel-item active">
-                <h2 class = "text-capitalize text-white">best collection</h2>
-                <h1 class = "text-uppercase py-2 fw-bold text-white">new arrivals</h1>
-                <a href = "#" class = "btn mt-3 text-uppercase">shop now</a>
+            <div class = "text-center carousel-item active ">
+                <h2 class = "fw-bold text-white">Macetas Increíbles</h2>
+                <h1 class = " py-1 fw-bold text-white">muy bonitas XD</h1>
+                <a href = "#" class = "btn mt-3 ">Comprar</a>
             </div>
             <div class = "text-center carousel-item">
-                <h2 class = "text-capitalize text-white">best price & offer</h2>
-                <h1 class = "text-uppercase py-2 fw-bold text-white">new season</h1>
-                <a href = "#" class = "btn mt-3 text-uppercase">buy now</a>
+                <h2 class = "fw-bold text-white">Macetas elegantes</h2>
+                <h1 class = " py-1 fw-bold text-white">nuevos productos</h1>
+                <a href = "#" class = "btn mt-3 ">Comprar</a>
             </div>
         </div>
 
@@ -85,7 +85,7 @@
             <span class = "carousel-control-next-icon"></span>
         </button>
     </header>
-    <!-- end of header -->
+    <!-- end header -->
 
     <!-- Macetas -->
     <section id = "collection" class = "py-5">
@@ -217,7 +217,7 @@
     </section>
     <!-- end Macetas -->
 
-    <!-- special products -->
+    <!-- Jardineras -->
     <section id = "special" >
         <div class = "container pb-5">
             <div class = "title text-center py-5">
@@ -235,7 +235,7 @@
                     <div class = "text-center">
                         <p class = "text-capitalize mt-3 mb-1">Artículo genérico</p>
                         <span class = "fw-bold d-block">$99.99</span>
-                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                        <a href = "#" class = "btn btn-primary mt-3">Agregar al carrito</a>
                     </div>
                 </div>
 
@@ -249,7 +249,7 @@
                     <div class = "text-center">
                         <p class = "text-capitalize mt-3 mb-1">Artículo genérico</p>
                         <span class = "fw-bold d-block">$99.99</span>
-                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                        <a href = "#" class = "btn btn-primary mt-3">Agregar al carrito</a>
                     </div>
                 </div>
 
@@ -263,7 +263,7 @@
                     <div class = "text-center">
                         <p class = "text-capitalize mt-3 mb-1">Artículo genérico</p>
                         <span class = "fw-bold d-block">$99.99</span>
-                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                        <a href = "#" class = "btn btn-primary mt-3">Agregar al carrito</a>
                     </div>
                 </div>
 
@@ -271,9 +271,9 @@
             </div>
         </div>
     </section>
-    <!-- end of special products -->
+    <!-- end of Jardineras -->
 
-    <!-- blogs -->
+    <!-- oferta -->
     <section id = "offers" class = "py-5">
         <div class = "container">
             <div class = "row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
@@ -285,63 +285,48 @@
             </div>
         </div>
     </section>
-    <!-- end of blogs -->
+    <!-- end oferta -->
 
-    <!-- blogs -->
+    <!-- Blog -->
     <section id = "blogs" class = "py-5">
         <div class = "container">
             <div class = "title text-center py-5">
-                <h2 class = "position-relative d-inline-block">Our Latest Blog</h2>
+                <h2 class = "position-relative d-inline-block">Blog</h2>
             </div>
 
             <div class = "row g-3">
                 <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
                     <img src = "images/blog_1.jpg" alt = "">
-                    <div class = "card-body px-0">
+                    <div class = "card-body px-0 ">
                         <h4 class = "card-title">Lorem ipsum, dolor sit amet consectetur adipisicing</h4>
                         <p class = "card-text mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae nostrum dolorem molestias odio. Sit fugit adipisci omnis quia itaque ratione iusto sapiente reiciendis, numquam officiis aliquid ipsam fuga.</p>
-                        <p class = "card-text">
-                            <small class = "text-muted">
-                                <span class = "fw-bold">Author: </span>John Doe
-                            </small>
-                        </p>
                         <a href = "#" class = "btn">Read More</a>
                     </div>
                 </div>
 
                 <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
-                    <img src = "images/blog_2.jpg" alt = "">
+                    <img src = "images/blog_1.jpg" alt = "">
                     <div class = "card-body px-0">
                         <h4 class = "card-title">Lorem ipsum, dolor sit amet consectetur adipisicing</h4>
                         <p class = "card-text mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae nostrum dolorem molestias odio. Sit fugit adipisci omnis quia itaque ratione iusto sapiente reiciendis, numquam officiis aliquid ipsam fuga.</p>
-                        <p class = "card-text">
-                            <small class = "text-muted">
-                                <span class = "fw-bold">Author: </span>John Doe
-                            </small>
-                        </p>
                         <a href = "#" class = "btn">Read More</a>
                     </div>
                 </div>
 
                 <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
-                    <img src = "images/blog_3.jpg" alt = "">
+                    <img src = "images/blog_1.jpg" alt = "">
                     <div class = "card-body px-0">
                         <h4 class = "card-title">Lorem ipsum, dolor sit amet consectetur adipisicing</h4>
                         <p class = "card-text mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae nostrum dolorem molestias odio. Sit fugit adipisci omnis quia itaque ratione iusto sapiente reiciendis, numquam officiis aliquid ipsam fuga.</p>
-                        <p class = "card-text">
-                            <small class = "text-muted">
-                                <span class = "fw-bold">Author: </span>John Doe
-                            </small>
-                        </p>
                         <a href = "#" class = "btn">Read More</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- end of blogs -->
+    <!-- end Blog-->
 
-    <!-- about us -->
+    <!-- nosotros -->
     <section id = "about" class = "py-5">
         <div class = "container">
             <div class = "row gy-lg-5 align-items-center">
@@ -358,13 +343,14 @@
             </div>
         </div>
     </section>
-    <!-- end of about us -->
+    <!-- end nosotros -->
 
  
     <!-- footer -->
-    <footer class = "bg-dark py-5">
+    <footer class = "bg-dark ">
         <div class = "container">
-            <div class = "row text-white g-4">
+
+            <div class = "row text-white g-4 ">
                 <div class = "col-md-6 col-lg-3">
                     <h5 class = "fw-light">Bamboo Panda Store</h5>
                     <p class = "text-white text-muted mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum mollitia quisquam veniam odit cupiditate, ullam aut voluptas velit dolor ipsam?</p>
@@ -377,13 +363,13 @@
                             <a href = "#" class = "text-white text-decoration-none text-muted">Home</a>
                         </li>
                         <li class = "my-3">
-                            <a href = "#" class = "text-white text-decoration-none text-muted">Collection</a>
+                            <a href = "#" class = "text-white text-decoration-none text-muted">Macetas</a>
                         </li>
                         <li class = "my-3">
-                            <a href = "#" class = "text-white text-decoration-none text-muted">Blogs</a>
+                            <a href = "#" class = "text-white text-decoration-none text-muted">Blog</a>
                         </li>
                         <li class = "my-3">
-                            <a href = "#" class = "text-white text-decoration-none text-muted">About Us</a>
+                            <a href = "#" class = "text-white text-decoration-none text-muted">Nosotros</a>
                         </li>
                     </ul>
                 </div>
@@ -395,7 +381,7 @@
                             <i class = "bi bi-geo-alt-fill"></i>
                         </span>
                         <span class = "fw-light">
-                            Xalpa, Veracuz
+                            Xalapa, Veracuz
                         </span>
                     </div>
                     <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
@@ -439,6 +425,19 @@
                     </div>
                 </div>
             </div>
+
+            <div class = "container derechos" ></div>
+                <div class = "row text-white align-items-center derechos">
+                    <p class="col-sm-9 fs-4 px-5 derechos pt-3">Josué Acevedo. &copy; Todos Los Derechos Reservados 2022</p>
+                    
+                    <div class = "col-sm-2 icons derechos" >
+                        <a class = "text-primary" href="https://github.com/JosueAcevedo99" target="_blank"><i class="bi bi-github"></i></a>
+                        <a class = "text-primary" href="https://mx.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                        <a class = "text-primary" href="#"><i class="bi bi-arrow-up-circle-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </footer>
     <!-- end of footer -->
