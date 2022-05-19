@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bamboo Store</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <!-- custom css -->
+    <link rel = "stylesheet" href = "css/main.css">
+
+</head>
+
+<body>
+    
+    <!-- navbar -->
+    <nav class = "navbar navbar-expand-lg navbar-light bg-white py-2 fixed-top">
+        <div class = "container">
+            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                <i class="bi bi-shop"></i>
+                <span class = "fw-lighter ms-2" id="titulo">Bamboo Panda Store</span>
+            </a>
+
+            <div class = "order-lg-2 nav-btns">
+                <button type = "button" class = "btn position-relative">
+                    <i class="bi bi-cart"></i>
+                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+                </button>
+                <button type = "button" class = "btn position-relative">
+                    <i class="bi bi-heart"></i>
+                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                </button>
+
+            </div>
+
+            <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                <ul class = "navbar-nav mx-auto text-center">
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link  text-dark" href = "#header">Home</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link  text-dark" href = "#collection">Macetas</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link  text-dark" href = "#special">Jardineras</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link  text-dark" href = "#blogs">Artículos</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link  text-dark" href = "#about">Nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- header -->
+    <header id = "header" class = "vh-100 carousel slide" data-bs-ride = "carousel" style = "padding-top: 104px;">
+        <div class = "container h-100 d-flex align-items-center carousel-inner">
+            <div class = "text-center carousel-item active">
+                <h2 class = "text-capitalize text-white">best collection</h2>
+                <h1 class = "text-uppercase py-2 fw-bold text-white">new arrivals</h1>
+                <a href = "#" class = "btn mt-3 text-uppercase">shop now</a>
+            </div>
+            <div class = "text-center carousel-item">
+                <h2 class = "text-capitalize text-white">best price & offer</h2>
+                <h1 class = "text-uppercase py-2 fw-bold text-white">new season</h1>
+                <a href = "#" class = "btn mt-3 text-uppercase">buy now</a>
+            </div>
+        </div>
+
+        <button class = "carousel-control-prev" type = "button" data-bs-target="#header" data-bs-slide = "prev">
+            <span class = "carousel-control-prev-icon"></span>
+        </button>
+        <button class = "carousel-control-next" type = "button" data-bs-target="#header" data-bs-slide = "next">
+            <span class = "carousel-control-next-icon"></span>
+        </button>
+    </header>
+    <!-- end of header -->
+
+    <!-- Macetas -->
+    <section id = "collection" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center">
+                <h2 class = "position-relative d-inline-block">Macetas</h2>
+            </div>
+
+            <div class = "row g-0">
+                <div class = "d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type = "button" class = "btn m-2 text-dark active-filter-btn" >Mejor vendidos</button>
+                    <button type = "button" class = "btn m-2 text-dark" >lorem</button>
+                    <button type = "button" class = "btn m-2 text-dark" >lorem</button>
+                    <button type = "button" class = "btn m-2 text-dark" >lorem</button>
+                </div>
+
+                <div class = "collection-list mt-4 row gx-0 gy-3">
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class = "collection-img position-relative">
+                            <img src = "images/dos.webp" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Artículo genérico</p>
+                            <span class = "fw-bold">$99.99</span>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class = "collection-img position-relative">
+                            <img src = "images/madera.jpg" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Artículo genérico</p>
+                            <span class = "fw-bold">$99.99</span>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class = "collection-img position-relative">
+                            <img src = "images/maceta3.webp" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Artículo genérico</p>
+                            <span class = "fw-bold">$99.99</span>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class = "collection-img position-relative">
+                            <img src = "images/blanca.webp" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Artículo genérico</p>
+                            <span class = "fw-bold">$99.99</span>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class = "collection-img position-relative">
+                            <img src = "images/cafe.webp" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Artículo genérico</p>
+                            <span class = "fw-bold">$99.99</span>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class = "collection-img position-relative">
+                            <img src = "images/redondo.webp" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                                <span class = "text-primary"><i class = "bi bi-star-fill"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Artículo genérico</p>
+                            <span class = "fw-bold">$99.99</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Macetas -->
+
+    <!-- special products -->
+    <section id = "special" >
+        <div class = "container pb-5">
+            <div class = "title text-center py-5">
+                <h2 class = "position-relative d-inline-block">Jardineras</h2>
+            </div>
+
+            <div class = "special-list row g-0">
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "images/macetera1.webp" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "bi bi-heart-fill"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">Artículo genérico</p>
+                        <span class = "fw-bold d-block">$99.99</span>
+                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "images/macetera2.webp" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "bi bi-heart-fill"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">Artículo genérico</p>
+                        <span class = "fw-bold d-block">$99.99</span>
+                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "images/macetera3.webp" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "bi bi-heart-fill"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">Artículo genérico</p>
+                        <span class = "fw-bold d-block">$99.99</span>
+                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- end of special products -->
+
+    <!-- blogs -->
+    <section id = "offers" class = "py-5">
+        <div class = "container">
+            <div class = "row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
+                <div class = "offers-content">
+                    <span class = "text-white">Descuentos de hasta 40%</span>
+                    <h2 class = "mt-2 mb-4 text-white">En tu primera compra</h2>
+                    <a href = "#" class = "btn">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of blogs -->
+
+    <!-- blogs -->
+    <section id = "blogs" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center py-5">
+                <h2 class = "position-relative d-inline-block">Our Latest Blog</h2>
+            </div>
+
+            <div class = "row g-3">
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src = "images/blog_1.jpg" alt = "">
+                    <div class = "card-body px-0">
+                        <h4 class = "card-title">Lorem ipsum, dolor sit amet consectetur adipisicing</h4>
+                        <p class = "card-text mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae nostrum dolorem molestias odio. Sit fugit adipisci omnis quia itaque ratione iusto sapiente reiciendis, numquam officiis aliquid ipsam fuga.</p>
+                        <p class = "card-text">
+                            <small class = "text-muted">
+                                <span class = "fw-bold">Author: </span>John Doe
+                            </small>
+                        </p>
+                        <a href = "#" class = "btn">Read More</a>
+                    </div>
+                </div>
+
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src = "images/blog_2.jpg" alt = "">
+                    <div class = "card-body px-0">
+                        <h4 class = "card-title">Lorem ipsum, dolor sit amet consectetur adipisicing</h4>
+                        <p class = "card-text mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae nostrum dolorem molestias odio. Sit fugit adipisci omnis quia itaque ratione iusto sapiente reiciendis, numquam officiis aliquid ipsam fuga.</p>
+                        <p class = "card-text">
+                            <small class = "text-muted">
+                                <span class = "fw-bold">Author: </span>John Doe
+                            </small>
+                        </p>
+                        <a href = "#" class = "btn">Read More</a>
+                    </div>
+                </div>
+
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src = "images/blog_3.jpg" alt = "">
+                    <div class = "card-body px-0">
+                        <h4 class = "card-title">Lorem ipsum, dolor sit amet consectetur adipisicing</h4>
+                        <p class = "card-text mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae nostrum dolorem molestias odio. Sit fugit adipisci omnis quia itaque ratione iusto sapiente reiciendis, numquam officiis aliquid ipsam fuga.</p>
+                        <p class = "card-text">
+                            <small class = "text-muted">
+                                <span class = "fw-bold">Author: </span>John Doe
+                            </small>
+                        </p>
+                        <a href = "#" class = "btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of blogs -->
+
+    <!-- about us -->
+    <section id = "about" class = "py-5">
+        <div class = "container">
+            <div class = "row gy-lg-5 align-items-center">
+                <div class = "col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class = "title pt-3 pb-5">
+                        <h2 class = "position-relative d-inline-block ms-4">About Us</h2>
+                    </div>
+                    <p class = "lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ipsam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga blanditiis, modi exercitationem quae quam eveniet! Minus labore voluptatibus corporis recusandae accusantium velit, nemo, nobis, nulla ullam pariatur totam quos.</p>
+                </div>
+                <div class = "col-lg-6 order-lg-0">
+                    <img src = "images/about_us.jpg" alt = "" class = "img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of about us -->
+
+ 
+    <!-- footer -->
+    <footer class = "bg-dark py-5">
+        <div class = "container">
+            <div class = "row text-white g-4">
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light">Bamboo Panda Store</h5>
+                    <p class = "text-white text-muted mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum mollitia quisquam veniam odit cupiditate, ullam aut voluptas velit dolor ipsam?</p>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light">Secciones</h5>
+                    <ul class = "list-unstyled">
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">Home</a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">Collection</a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">Blogs</a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Contacto</h5>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "bi bi-geo-alt-fill"></i>
+                        </span>
+                        <span class = "fw-light">
+                            Xalpa, Veracuz
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class="bi bi-mailbox2"></i>
+                        </span>
+                        <span class = "fw-light">
+                            bamboo-panda@gmail.com
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class="bi bi-telephone-fill"></i>
+                        </span>
+                        <span class = "fw-light">
+                            2281407599
+                        </span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Síguenos</h5>
+                    <div>
+                        <ul class = "list-unstyled d-flex">
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> 
+    <!-- Bootstrap JS Custom -->
+    <script src = "js/main.js"></script>
+</body>
+</html>
